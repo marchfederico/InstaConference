@@ -3,7 +3,7 @@
 To get it running:
 
 The TropoScript directory contains the Tropo script you need to deploy on Tropo.com.  
-You need to change the CONFERENCE_APP_URL parameter in the script to point to this web app or it won't work.  If running this on you local machine you can use something like ngrok.
+You need to change the CONFERENCE_APP_URL parameter in the script to point to this web app or it won't work.  If running this on your local machine you can use something like ngrok.
 
 When running the app you will need to export the following configuration parameters:
 
