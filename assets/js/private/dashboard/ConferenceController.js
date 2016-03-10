@@ -224,6 +224,28 @@ angular.module('ConferenceModule').controller('ConferenceController', ['$scope',
 
   }
 
+  $scope.callOrHangup = function(participantId) {
+
+    for (i=0; i<$scope.conference.participantList.length; i++)
+    {
+      if(participantId ==$scope.conference.participantList[i].id )
+      {
+        if ($scope.conference.participantList[i].callState == 'Connected')
+        {
+          hangupParticipant($scope.conference.participantList[i]).then(function(msg){
+            console.log(msg)
+          })
+        }
+        else if ($scope.conference.participantList[i].callState == 'Disconnected')
+        {
+          callParticipant($scope.conference.participantList[i]).then(function(msg){
+            console.log(msg)
+          })
+        }
+      }
+        break;
+      }
+  }
   $scope.hangup = function(participantId) {
     console.log("hangupParticipant:"+participantId)
     for (i=0; i<$scope.conference.participantList.length; i++)

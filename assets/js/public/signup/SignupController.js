@@ -37,7 +37,7 @@ angular.module('SignupModule').controller('SignupController', ['$scope', '$http'
 			$scope.signupForm.loading = false;
 		})
 	}
-/*
+
 	$scope.submitLoginForm = function (){
 
     // Set the loading state (i.e. show loading spinner)
@@ -75,5 +75,5 @@ angular.module('SignupModule').controller('SignupController', ['$scope', '$http'
       $scope.loginForm.loading = false;
     });
   };
-*/
+
 }]);

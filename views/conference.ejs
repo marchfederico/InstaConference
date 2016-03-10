@@ -85,7 +85,7 @@
             <td>{{row.userInfo.sn}}</td>
             <td> {{row.userInfo.telephoneNumber}}</td>
             <td>
-              <button type="button" ng-click="hangup(row.id)" ng-class="colorConnectedButton[row.id]">
+              <button type="button" ng-click="callOrHangup(row.id)" ng-class="colorConnectedButton[row.id]">
                 <i class="glyphicon glyphicon-earphone">
                 </i>
                 {{row.callState}}
