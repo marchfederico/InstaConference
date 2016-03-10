@@ -2,19 +2,18 @@
 
 To get it running:
 
-The TropoScript directory contains the Tropo script you need to deploy on Tropo.com.  You need to change the CONFERENCE_APP_URL
-parameter in the script to point to this web app or it won't work.  You can use something like ngrok if you are running this on your
-laptop as a demo.
-
+The TropoScript directory contains the Tropo script you need to deploy on Tropo.com.  
+You need to change the CONFERENCE_APP_URL parameter in the script to point to this web app or it won't work.  If running this on your local machine you can use something like ngrok.
 
 When running the app you will need to export the following configuration parameters:
 
-TROPO_API_KEY - Your tropo API key that points to the conference.js Tropo Scripting application (required)
-LDAP_BASE_DN  - Base DN to search (if using ldap)
-LDAP_BIND_DN  - The Bind DN when connecting to ldap
-LDAP_USERNAME - The Username to connect to ldap with
-LDAP_PASSWORD - The password to use when connecting to ldap
-LDAP_SERVER_URL - the ldap server url
+* TROPO_API_KEY - Your tropo API key that points to the conference.js Tropo Scripting application (required)
+* LDAP_BASE_DN  - Base DN to search (if using ldap)
+* LDAP_BIND_DN  - The Bind DN when connecting to ldap
+* LDAP_USERNAME - The Username to connect to ldap with
+* LDAP_PASSWORD - The password to use when connecting to ldap
+* LDAP_SERVER_URL - the ldap server url
+
 
 
 ```
